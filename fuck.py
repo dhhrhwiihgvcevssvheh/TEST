@@ -22,7 +22,7 @@ def main():
     print(logo)
     pwx=["first6","last6"]
     print("—"*30)
-    print(" CODE: 017 018")
+    print(" CODE: 0171 0181")
     print("—"*30)
     code=input("[!] -->")
 
@@ -31,7 +31,7 @@ def main():
     
     
     for i in range(200000):
-        gg=str(random.choice(range(10000000,99999999)))
+        gg=str(random.choice(range(1000000,9999999)))
         user.append(gg)
     with ThreadPool(max_workers=30) as update:
         os.system("clear")
